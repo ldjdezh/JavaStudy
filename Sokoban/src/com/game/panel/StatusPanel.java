@@ -1,5 +1,12 @@
 package com.game.panel;
 
-public class StatusPanel {
+import javax.swing.JPanel;
+
+public class StatusPanel extends JPanel{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 }
