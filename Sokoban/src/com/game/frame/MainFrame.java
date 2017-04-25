@@ -1,12 +1,38 @@
 package com.game.frame;
 
+import java.awt.BorderLayout;
+import java.awt.Container;
+
 import javax.swing.JFrame;
 
-public class MainFrame extends JFrame{
+import com.game.panel.GamePanel;
+import com.game.panel.StatusPanel;
+
+/**
+ * 
+ * @author Mark
+ *	完成了，不过还有很多的功能要添加的
+ */
+public class MainFrame extends JFrame {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	private GamePanel gamePanel;
+	private StatusPanel statusPanel;
 
+	public MainFrame() {
+		statusPanel = new StatusPanel();
+		gamePanel = new GamePanel(statusPanel);
+		setTitle("推箱子");
+		setSize(850, 500);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLocationRelativeTo(null);
+		Container container = getContentPane();
+		container.setLayout(new BorderLayout(2, 2));
+		container.add(gamePanel, BorderLayout.CENTER);
+		container.add(statusPanel, BorderLayout.EAST);
+		setVisible(true);
+	}
 }
