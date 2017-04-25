@@ -11,7 +11,7 @@ import com.game.panel.StatusPanel;
 /**
  * 
  * @author Mark
- *	Íê³ÉÁË£¬²»¹ı»¹ÓĞºÜ¶àµÄ¹¦ÄÜÒªÌí¼ÓµÄ
+ *	å®Œæˆäº†ä¸»è¦åŠŸèƒ½
  */
 public class MainFrame extends JFrame {
 
@@ -25,7 +25,7 @@ public class MainFrame extends JFrame {
 	public MainFrame() {
 		statusPanel = new StatusPanel();
 		gamePanel = new GamePanel(statusPanel);
-		setTitle("ÍÆÏä×Ó");
+		setTitle("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 		setSize(850, 500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
