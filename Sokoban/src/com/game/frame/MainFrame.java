@@ -25,7 +25,7 @@ public class MainFrame extends JFrame {
 	public MainFrame() {
 		statusPanel = new StatusPanel();
 		gamePanel = new GamePanel(statusPanel);
-		setTitle("������");
+		setTitle("推箱子");
 		setSize(850, 500);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
