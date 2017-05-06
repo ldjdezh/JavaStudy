@@ -32,7 +32,7 @@ public class Bullet {
 
 	public void updateBullet() {
 		if (flag) {
-			mPosY -= 25;
+			mPosY -= 15;
 
 //			mPlayID++;
 //
